@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome" class="section active">
+    <h1>Welcome to Color Memory Game</h1>
+    <button onclick="goToSection('nameInput')">Start Game</button>
+  </div>
+
+  <!-- Username Input -->
+  <div id="nameInput" class="section">
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <br><br>
+    <button onclick="saveUsername()">Continue</button>
+  </div>
+
+  <!-- Level Selection -->
+  <div id="levelSelect" class="section">
+    <h2>Select Difficulty</h2>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('difficult')">Difficult</button>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game" class="section">
+    <h2 id="levelTitle"></h2>
+    <div id="gameArea"></div>
+    <br>
+    <button onclick="submitAnswer()">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

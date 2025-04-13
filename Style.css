@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 30px;
+}
+
+.section {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.color-box {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  display: inline-block;
+  border: 2px solid #333;
+  cursor: move;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
